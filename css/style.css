@@ -1,0 +1,306 @@
+@import "resetting.css";
+section,
+header {
+  display: block;
+}
+body {
+  background-color: #F6F6F6;
+}
+div {
+  background-color: #fff;
+}
+#main {
+  width: 1000px;
+  margin: 0 auto;
+}
+#main .banner {
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+#main .banner img {
+  width: 100%;
+}
+#main .nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+#main .nav a {
+  color: #999;
+  margin-right: 30px;
+}
+#main .nav .active {
+  color: #000;
+}
+#main #left {
+  width: 690px;
+  float: left;
+}
+#main #left .search {
+  margin-top: 10px;
+  height: 58px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+#main #left .search p {
+  width: 94px;
+  height: 100%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 16px;
+  margin-left: 20px;
+}
+#main #left .search form {
+  margin-left: 20px;
+  position: relative;
+}
+#main #left .search form input {
+  display: block;
+  width: 450px;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 14px;
+  background: #F6F6F6;
+  border-radius: 5px;
+  transition: .5s;
+}
+#main #left .search form button {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url(../img/search.png) no-repeat center center;
+  background-size: 22px 22px;
+  top: 0;
+  right: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#main #left .noticeAffiche {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+}
+#main #left .noticeAffiche .ontice,
+#main #left .noticeAffiche .affiche {
+  transition: 1s;
+  width: 340px;
+  height: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  float: left;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+#main #left .noticeAffiche .ontice h3,
+#main #left .noticeAffiche .affiche h3 {
+  position: relative;
+  font-weight: 300;
+  font-size: 18px;
+}
+#main #left .noticeAffiche .ontice h3 span,
+#main #left .noticeAffiche .affiche h3 span {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  font-size: 14px;
+  color: #0084FF;
+  cursor: pointer;
+}
+#main #left .noticeAffiche .ontice h3 span:hover,
+#main #left .noticeAffiche .affiche h3 span:hover {
+  color: gray;
+}
+#main #left .noticeAffiche .ontice ul,
+#main #left .noticeAffiche .affiche ul {
+  margin-top: 14px;
+}
+#main #left .noticeAffiche .ontice ul li,
+#main #left .noticeAffiche .affiche ul li {
+  position: relative;
+  display: flex;
+  height: 26px;
+  font-size: 14px;
+}
+#main #left .noticeAffiche .ontice ul li span,
+#main #left .noticeAffiche .affiche ul li span {
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: gray;
+}
+#main #left .noticeAffiche .ontice ul li a,
+#main #left .noticeAffiche .affiche ul li a {
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+#main #left .noticeAffiche .ontice ul li a:hover,
+#main #left .noticeAffiche .affiche ul li a:hover {
+  color: #0084FF;
+}
+#main #left .noticeAffiche .affiche {
+  float: right;
+}
+#main #left .noticeAffiche .affiche li a {
+  width: 180px;
+}
+#main #left .meet {
+  margin-top: 10px;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  padding: 10px 20px 20px 20px;
+  box-sizing: border-box;
+}
+#main #left .meet h3 {
+  font-weight: 300;
+}
+#main #left .meet .table .th {
+  display: flex;
+  width: 100%;
+}
+#main #left .meet .table .th p {
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+#main #left .meet .table ul li {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  border-bottom: 1px dashed #ccc;
+}
+#main #left .meet .table ul li p {
+  width: 25%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+#main #left .meet .table ul li p a {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+#main #left .meet .table ul li p a:hover {
+  color: #0084FF;
+}
+#main #right {
+  width: 300px;
+  float: right;
+}
+#main #right .login {
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  padding: 10px 20px 15px 20px;
+  box-sizing: border-box;
+}
+#main #right .login h3 {
+  font-weight: 300;
+  font-size: 20px;
+  color: gray;
+}
+#main #right .login h3 span {
+  cursor: pointer;
+}
+#main #right .login h3 .active {
+  color: #000;
+}
+#main #right .login input {
+  background: #F6F6F6;
+  height: 36px;
+  width: calc(100% - 10px);
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-top: 18px;
+}
+#main #right .login div {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #right .login div input {
+  width: 50%;
+  margin-top: 0;
+}
+#main #right .login div span {
+  display: inline-block;
+  width: 40%;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 3px;
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .5s;
+}
+#main #right .login div span a {
+  color: #0084FF;
+}
+#main #right .login div span a:hover {
+  color: gray;
+}
+#main #right .login button {
+  margin-top: 18px;
+  width: 100%;
+  height: 36px;
+  color: #0084FF;
+  border: 1px solid #0084FF;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#main #right .login button:hover {
+  background: rgba(0, 132, 255, 0.06);
+}
+#main #right .login [onOff=false] {
+  display: none;
+}
+#main #right .navBox {
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  width: 100%;
+  padding: 10px 20px 15px 20px;
+  box-sizing: border-box;
+}
+#main #right .navBox h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+#main #right .navBox ul li {
+  height: 26px;
+  line-height: 26px;
+}
+#main #right .navBox ul li a {
+  font-size: 14px;
+  color: #999;
+}
+#main #right .navBox ul li a:hover {
+  color: #0084FF;
+}
+#main #right .advert {
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  width: 100%;
+  height: 300px;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 300px;
+}
