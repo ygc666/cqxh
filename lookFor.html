@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重庆新华</title>
+    <link rel="stylesheet" href="./css/lookFor.css">
+</head>
+<body>
+    <!--加head的话直接加就行了-->
+    <section id="main">
+        <div class="banner">
+            <img src="img/banner.jpg" >
+        </div>
+        <div class="nav">
+            <a class="active" href="javascript:;">首页</a>
+            <a href="javascript:;">就业资讯</a>
+            <a href="javascript:;">找工作</a>
+            <a href="javascript:;">找人才</a>
+            <a href="javascript:;">招聘会信息</a>
+        </div>
+        <div class="searchBox">
+            <div class="search">
+                <form action="#">
+                    <p><label for="inp1">招聘职位 ： </label><input id="inp1" type="text"></p>
+                    <p><label for="inp2">专业要求 ： </label><input id="inp2" type="text"></p>
+                    <p><label for="inp3">企业名称 ： </label><input id="inp3" type="text"></p>
+                </form>
+                <div>
+                    <p><label for="inp3">发布时间 ： </label><input style="cursor: not-allowed;" id="inp4" type="text" disabled="disabled"></p>
+                    <p class="option">
+                        <span>近一天<span style="color: red;">*</span></span>&nbsp;&nbsp;
+                        <span>近三天<span style="color: red;">*</span></span>&nbsp;&nbsp;
+                        <span>近一周<span style="color: red;">*</span></span>&nbsp;&nbsp;
+                        <span>近一月<span style="color: red;">*</span></span>&nbsp;&nbsp;
+                        <span>近三月<span style="color: red;">*</span></span>&nbsp;&nbsp;
+                        <span>近半年<span style="color: red;">*</span></span>
+                    </p>
+                    <p><button>搜索</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="th">
+                <!-- <p>企业名称</p>
+                <p>职位名称</p>
+                <p>专业要求</p>
+                <p>招聘人数</p>
+                <p>发布时间</p> -->
+            </div>
+            <ul>
+                <!-- <li>
+                    <p>大连双华木结构建筑工程有限公司</p>
+                    <p>设计师（CAD制图）</p>
+                    <p>建筑及设计相关专业</p>
+                    <p>10人</p>
+                    <p>2018/7/8</p>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+    window.onload = function(){
+        //模拟数据
+        //投入使用的话就是 后端 通过 url? 后面的哈希值 传递过来的判断来替换掉data里面的数据，达到跳转页面
+        //最好还是在data里面传入一个值代表的是当前页面 以便替换 选中导航时候的 active
+        let data = {
+            ths : ["企业名称","职位名称","专业要求","招聘人数","发布时间"],
+            content : [
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                },
+                {
+                    companyName:"大连双华木结构建筑工程有限公司",
+                    positionName:"设计师（CAD制图）",
+                    specialty:"建筑及设计相关专业",
+                    number:10,
+                    time:"2018/7/8"
+                }
+            ]
+        }
+        //这里没有改 content 对象下的属性 名字，一一对应也都看得懂
+        /*let data = {
+            ths : ["姓名","性别","毕业学院","所属专业","注册时间"],
+            content : [
+                {
+                    companyName:"孙鹏",
+                    positionName:"男",
+                    specialty:"辽宁机电职业技术学院",
+                    number:"无损检测",
+                    time:"2018/7/8"
+                }
+            ]
+        }*/
+        //渲染数据
+        const table = document.querySelector('.table');
+        const ths = table.querySelectorAll('.th>p');
+        (function(){
+            for(let i =0;i<data.ths.length;i++){
+                let p = document.createElement('p');
+                p.innerHTML = data.ths[i];
+                table.querySelector('.th').appendChild(p);
+            }
+            for(let i =0;i<data.content.length;i++){
+                let li = document.createElement('li');
+                li.innerHTML = `
+                    <p>${data.content[i].companyName}</p>
+                    <p>${data.content[i].positionName}</p>
+                    <p>${data.content[i].specialty}</p>
+                    <p>${data.content[i].number}人</p>
+                    <p>${data.content[i].time}</p>
+                `;
+                table.querySelector('ul').appendChild(li);
+            }
+        })();
+        const publishInp = document.querySelector('#inp4');
+        const options = document.querySelectorAll('.option>span');
+        for(let i = 0; i<options.length;i++){
+            options[i].onclick = function(){
+                publishInp.value = this.innerHTML.slice(0,3);
+            }
+        }
+    }
+</script>

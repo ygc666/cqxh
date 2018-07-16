@@ -1,0 +1,131 @@
+@import "resetting.css";
+section,
+header {
+  display: block;
+}
+body {
+  background-color: #F6F6F6;
+}
+div {
+  background-color: #fff;
+}
+#main {
+  width: 1000px;
+  margin: 0 auto;
+}
+#main .banner {
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+#main .banner img {
+  width: 100%;
+}
+#main .nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+#main .nav a {
+  color: #999;
+  margin-right: 30px;
+}
+#main .nav .active {
+  color: #000;
+}
+#main .searchBox {
+  font-size: 14px;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  width: 100%;
+  height: 88px;
+}
+#main .searchBox .search form {
+  display: flex;
+  align-items: center;
+}
+#main .searchBox .search form p {
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+}
+#main .searchBox .search form p input {
+  border: 1px solid #ccc;
+  height: 28px;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+#main .searchBox .search div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+#main .searchBox .search div p {
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+#main .searchBox .search div p input {
+  border: 1px solid #ccc;
+  height: 28px;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+#main .searchBox .search div p button {
+  width: 78%;
+  height: 32px;
+  color: #0084FF;
+  border: 1px solid #0084FF;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#main .searchBox .search div p button:hover {
+  background: rgba(0, 132, 255, 0.06);
+}
+#main .searchBox .search div .option {
+  text-align: center;
+  font-size: 13px;
+}
+#main .searchBox .search div .option span {
+  cursor: pointer;
+}
+#main .table {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+#main .table .th {
+  display: flex;
+  width: 100%;
+}
+#main .table .th p {
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+#main .table ul li {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  border-bottom: 1px dashed #ccc;
+}
+#main .table ul li p {
+  width: 20%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
