@@ -1,4 +1,14 @@
 window.onload = function(){
+    //处理是否为当前选中的页面 但是只能判断是否为主页 ， 因为总共三个页面而我有五个选项 所以那几个页面最好还是后端传值来判断
+    const path = window.location.pathname;
+    const index = path.lastIndexOf("\/");
+    const fileName = path.substring(index + 1, path.length-5);
+    const navAs = document.querySelectorAll('.nav a');
+    switch (fileName){
+        case "index":
+            navAs[0].className = 'active';
+        break;
+    }
     //模拟数据
     var data = [
         {

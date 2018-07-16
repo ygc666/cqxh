@@ -1,0 +1,89 @@
+@import "resetting.css";
+section,
+header {
+  display: block;
+}
+body {
+  background-color: #F6F6F6;
+}
+div {
+  background-color: #fff;
+}
+#main {
+  width: 1000px;
+  margin: 0 auto;
+}
+#main .banner {
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+#main .banner img {
+  width: 100%;
+}
+#main .nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+#main .nav a {
+  color: #999;
+  margin-right: 30px;
+}
+#main .nav .active {
+  color: #000;
+}
+#main #left {
+  margin-top: 10px;
+  width: 720px;
+  height: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  background-color: #fff;
+  float: left;
+}
+#main #left ul {
+  font-size: 14px;
+}
+#main #left ul li {
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+}
+#main #left ul li a {
+  margin-left: 30px;
+  float: left;
+}
+#main #left ul li span {
+  float: right;
+  margin-right: 10px;
+}
+#main #left ul li::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: red;
+  top: 10.5px;
+  left: 10.5px;
+}
+#main #right {
+  margin-top: 10px;
+  width: 270px;
+  float: right;
+}
+#main #right div {
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  margin-top: 10px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 36px;
+  font-weight: 300;
+}
+#main #right div:first-child {
+  margin-top: 0;
+}
